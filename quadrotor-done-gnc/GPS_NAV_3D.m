@@ -145,6 +145,13 @@ lower_y = r_R_sol_Arr_y - 3*sigma_east;
 upper_z = r_R_sol_Arr_z + 3*sigma_down;
 lower_z = r_R_sol_Arr_z - 3*sigma_down;
 
+% 3D trajectory plot
+figure;
+plot3(r_R_sol_Arr_x, r_R_sol_Arr_y, r_R_sol_Arr_z)
+grid on
+xlabel('Est. North Pos. (m)', 'FontSize', 16)
+ylabel('Est. East Pos. (m)', 'FontSize', 16)
+zlabel('Est. Down Pos. (m)', 'FontSize', 16)
 
 % Individual plots with ±3σ bounds
 figure;
