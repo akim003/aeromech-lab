@@ -157,7 +157,7 @@ plot(time, lower_x, '--k')
 hold off
 grid on
 ylabel('Est. North Pos. (m)')
-legend('Est. Pos.', '\pm 3\sigma')
+legend('Est. Pos.', 'Upper 3\sigma', 'Lower 3\sigma')
 
 subplot(3,1,2)
 plot(time, r_R_sol_Arr_y)
